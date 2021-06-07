@@ -16,7 +16,7 @@ app.use('/api/auth',require('./routes/auth'))
 app.use('/api/contacts',require('./routes/contacts'))
 
 
-app.get('/', (req, res) => res.json({msg: 'welcome to the contact'}))
+
 
 if(process.env.NODE_ENV === 'production'){
     //set statuc folder
