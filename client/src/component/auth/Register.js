@@ -49,6 +49,11 @@ const Register = props => {
       });
     }
   };
+  const pStyle ={
+    display:"inline",
+    color:"blue"
+}
+
   return (
     <div className='form-container'>
       <h1>
@@ -56,7 +61,7 @@ const Register = props => {
       </h1>
       <form onSubmit={onSubmit}>
         <div className='form-group'>
-          <label htmlFor='name'>Name</label>
+          <label htmlFor='name'> <p style={pStyle}>Name</p></label>
           <input
             id='name'
             type='text'
@@ -67,7 +72,7 @@ const Register = props => {
           />
         </div>
         <div className='form-group'>
-          <label htmlFor='email'>Email Address</label>
+          <label htmlFor='email'> <p style={pStyle}>Email Address</p></label>
           <input
             id='email'
             type='email'
@@ -78,7 +83,7 @@ const Register = props => {
           />
         </div>
         <div className='form-group'>
-          <label htmlFor='password'>Password</label>
+          <label htmlFor='password'><p style={pStyle}>Password</p></label>
           <input
             id='password'
             type='password'
@@ -90,7 +95,7 @@ const Register = props => {
           />
         </div>
         <div className='form-group'>
-          <label htmlFor='password2'>Confirm Password</label>
+          <label htmlFor='password2'><p style={pStyle}>Confirm Password</p></label>
           <input
             id='password2'
             type='password'
